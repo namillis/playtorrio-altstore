@@ -506,6 +506,61 @@
     .table-version { font-weight: 780; }
     .dim { color: var(--muted); }
 
+    .notes-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 0;
+      color: var(--text);
+      background: transparent;
+      border: 0;
+      cursor: pointer;
+      font: inherit;
+      font-weight: 780;
+      text-align: left;
+    }
+
+    .notes-chevron {
+      display: inline-block;
+      width: 10px;
+      color: var(--purple-light);
+      transition: transform .15s ease;
+    }
+
+    .notes-toggle[aria-expanded="true"] .notes-chevron {
+      transform: rotate(90deg);
+    }
+
+    .release-notes-row[hidden] { display: none; }
+    .release-notes-row:hover td { background: transparent; }
+
+    .release-notes-row td {
+      padding: 0 15px 15px;
+      white-space: normal;
+    }
+
+    .release-notes {
+      max-width: 760px;
+      padding: 14px 16px;
+      color: var(--muted);
+      background: rgba(113, 54, 217, .07);
+      border: 1px solid rgba(182, 147, 255, .18);
+      border-radius: 11px;
+    }
+
+    .release-notes strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--text);
+      font-size: 12px;
+    }
+
+    .release-notes p {
+      margin: 0;
+      line-height: 1.55;
+      white-space: pre-line;
+    }
+
     .download-link {
       color: var(--purple-light);
       font-weight: 700;
@@ -645,7 +700,7 @@
     <section class="versions-section" aria-labelledby="versions-heading">
       <div class="section-heading">
         <h2 id="versions-heading">Verified releases</h2>
-        <p>Every file links directly to PlayTorrio's GitHub releases and includes an integrity hash in the source JSON.</p>
+        <p>Every file links directly to PlayTorrio's GitHub releases. Rows marked ▸ include release notes pulled from GitHub — tap the version to read them.</p>
       </div>
       <div class="table-shell">
         <table>
@@ -786,8 +841,11 @@
         return dateOrder || left.appIndex - right.appIndex;
       });
 
-      versions.forEach(function (entry) {
+      versions.forEach(function (entry, releaseIndex) {
         var row = document.createElement("tr");
+        var notes = String(entry.version.localizedDescription || "").trim();
+        var notesId = "release-notes-" + releaseIndex;
+        var toggle = null;
         var values = [
           entry.app.name || "PlayTorrio",
           entry.version.version || "—",
@@ -797,10 +855,30 @@
           formatSize(entry.version.size)
         ];
 
-        values.forEach(function (value, index) {
+        values.forEach(function (value, columnIndex) {
           var cell = document.createElement("td");
-          cell.textContent = value;
-          cell.className = index === 1 ? "table-version" : "dim";
+          cell.className = columnIndex === 1 ? "table-version" : "dim";
+
+          if (columnIndex === 1 && notes) {
+            toggle = document.createElement("button");
+            toggle.className = "notes-toggle";
+            toggle.type = "button";
+            toggle.setAttribute("aria-expanded", "false");
+            toggle.setAttribute("aria-controls", notesId);
+
+            var chevron = document.createElement("span");
+            chevron.className = "notes-chevron";
+            chevron.setAttribute("aria-hidden", "true");
+            chevron.textContent = "▸";
+
+            var label = document.createElement("span");
+            label.textContent = value;
+            toggle.appendChild(chevron);
+            toggle.appendChild(label);
+            cell.appendChild(toggle);
+          } else {
+            cell.textContent = value;
+          }
           row.appendChild(cell);
         });
 
@@ -812,6 +890,33 @@
         downloadCell.appendChild(download);
         row.appendChild(downloadCell);
         body.appendChild(row);
+
+        if (notes && toggle) {
+          var notesRow = document.createElement("tr");
+          var notesCell = document.createElement("td");
+          var notesPanel = document.createElement("div");
+          var notesTitle = document.createElement("strong");
+          var notesText = document.createElement("p");
+
+          notesRow.className = "release-notes-row";
+          notesRow.id = notesId;
+          notesRow.hidden = true;
+          notesCell.colSpan = 7;
+          notesPanel.className = "release-notes";
+          notesTitle.textContent = "What's new in " + (entry.app.name || "PlayTorrio") + " " + entry.version.version;
+          notesText.textContent = notes;
+          notesPanel.appendChild(notesTitle);
+          notesPanel.appendChild(notesText);
+          notesCell.appendChild(notesPanel);
+          notesRow.appendChild(notesCell);
+          body.appendChild(notesRow);
+
+          toggle.addEventListener("click", function () {
+            var expanded = toggle.getAttribute("aria-expanded") === "true";
+            toggle.setAttribute("aria-expanded", String(!expanded));
+            notesRow.hidden = expanded;
+          });
+        }
       });
     }
 
