@@ -4,10 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>PlayTorrio — Unofficial AltStore Source</title>
-  <meta name="description" content="Sideload PlayTorrio on iPhone and iPad with a one-tap source for AltStore and SideStore." />
+  <meta name="description" content="Sideload PlayTorrio on iPhone and iPad with one-tap links for AltStore, SideStore, and LiveContainer." />
   <meta name="theme-color" content="#0b0711" />
   <meta property="og:title" content="PlayTorrio — Unofficial AltStore Source" />
-  <meta property="og:description" content="Add PlayTorrio V3 and legacy releases to AltStore, SideStore, Feather, and other signing apps." />
+  <meta property="og:description" content="Add PlayTorrio V3 and legacy releases to AltStore, SideStore, LiveContainer, and other signing apps." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://namillis.github.io/playtorrio-altstore/install.html" />
   <meta property="og:image" content="https://raw.githubusercontent.com/ayman708-UX/PlayTorrioV3/main/assets/icon.png" />
@@ -340,6 +340,10 @@
       border-color: rgba(182, 147, 255, .42);
     }
 
+    .button.livecontainer {
+      grid-column: 1 / -1;
+    }
+
     .button:hover,
     .button:focus-visible { filter: brightness(1.14); }
     .button:active { transform: translateY(1px); }
@@ -618,6 +622,7 @@
         <div class="install-buttons">
           <a class="button" id="altstore-link" href="#">Add to AltStore</a>
           <a class="button secondary" id="sidestore-link" href="#">Add to SideStore</a>
+          <a class="button secondary livecontainer" id="livecontainer-link" href="#">Add to LiveContainer</a>
         </div>
       </div>
     </section>
@@ -676,6 +681,7 @@
     sourceNode.textContent = SOURCE_URL;
     document.getElementById("altstore-link").href = "altstore://source?url=" + encodedSource;
     document.getElementById("sidestore-link").href = "sidestore://source?url=" + encodedSource;
+    document.getElementById("livecontainer-link").href = "livecontainer://source?url=" + encodedSource;
 
     function copySource() {
       var button = document.getElementById("copy-source");
