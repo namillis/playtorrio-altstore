@@ -6,7 +6,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![iOS apps](https://img.shields.io/badge/iOS-PlayTorrio%20V3%20%2B%20Legacy-6030A8)](playtorrio-ios.json)
 
-An **unofficial, community-maintained AltStore-format source** for [PlayTorrio](https://playtorrio.xyz/) on iPhone and iPad. It works with signing apps that consume the standard AltStore source format, including AltStore, SideStore, Feather, ESign, Scarlet, and Sideloadly.
+An **unofficial, community-maintained AltStore-format source** for [PlayTorrio](https://playtorrio.xyz/) on iPhone and iPad. It works with signing apps that consume the standard AltStore source format, including AltStore, SideStore, LiveContainer, Scarlet, and Sideloadly.
 
 IPAs are downloaded directly from PlayTorrio's public GitHub releases. This repository only publishes source metadata and is not affiliated with or supported by the PlayTorrio developer.
 
@@ -18,7 +18,7 @@ Open the live installation page on your iPhone or iPad:
 
 [**Add PlayTorrio source →**](https://namillis.github.io/playtorrio-altstore/install.html)
 
-The page can open the source directly in AltStore or SideStore. It also provides a copy button for Feather, ESign, Scarlet, and other signing apps.
+The page can open the source directly in AltStore, SideStore, or LiveContainer. It also provides a copy button for other signing apps.
 
 ### Add the source manually
 
