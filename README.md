@@ -1,6 +1,8 @@
 # PlayTorrio — Unofficial AltStore Source
 
-[![AltStore source](https://img.shields.io/badge/AltStore-source-6030A8)](playtorrio-ios.json)
+[![One-tap install](https://img.shields.io/badge/Install-one--tap-6030A8)](https://namillis.github.io/playtorrio-altstore/install.html)
+[![AltStore source](https://img.shields.io/badge/AltStore-source-6030A8)](https://namillis.github.io/playtorrio-altstore/playtorrio-ios.json)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-live-2ea44f)](https://namillis.github.io/playtorrio-altstore/install.html)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![iOS apps](https://img.shields.io/badge/iOS-PlayTorrio%20V3%20%2B%20Legacy-6030A8)](playtorrio-ios.json)
 
@@ -12,7 +14,7 @@ IPAs are downloaded directly from PlayTorrio's public GitHub releases. This repo
 
 ### One-tap install
 
-Open the installation page on your iPhone or iPad:
+Open the live installation page on your iPhone or iPad:
 
 [**Add PlayTorrio source →**](https://namillis.github.io/playtorrio-altstore/install.html)
 
@@ -20,13 +22,13 @@ The page can open the source directly in AltStore or SideStore. It also provides
 
 ### Add the source manually
 
-After GitHub Pages is enabled, paste this URL into your signing app's **Sources** or **Repositories** section:
+Paste the live source URL into your signing app's **Sources** or **Repositories** section:
 
 ```text
 https://namillis.github.io/playtorrio-altstore/playtorrio-ios.json
 ```
 
-If Pages is not enabled yet, use the raw GitHub fallback:
+Raw GitHub fallback:
 
 ```text
 https://raw.githubusercontent.com/namillis/playtorrio-altstore/main/playtorrio-ios.json
@@ -58,20 +60,17 @@ Published metadata is read directly from each IPA's main `Info.plist`, including
 
 The source uses version-pinned GitHub release URLs so a future release cannot silently change an older entry's file, size, or hash.
 
-## Hosting with GitHub Pages
+## Live endpoints
 
-The raw GitHub fallback works immediately. GitHub Pages is preferred because it hosts the one-tap installation page and serves the source with an `application/json` content type.
+GitHub Pages is enabled and serving both the installation page and source JSON from the `main` branch.
 
-1. Open **Settings → Pages** in this repository.
-2. Select **Deploy from a branch**.
-3. Choose `main` and `/ (root)`.
-4. Save and wait for GitHub Pages to deploy.
+| Resource | Live URL |
+|---|---|
+| One-tap installation page | [namillis.github.io/playtorrio-altstore/install.html](https://namillis.github.io/playtorrio-altstore/install.html) |
+| AltStore source JSON | [namillis.github.io/playtorrio-altstore/playtorrio-ios.json](https://namillis.github.io/playtorrio-altstore/playtorrio-ios.json) |
+| Raw JSON fallback | [raw.githubusercontent.com/.../playtorrio-ios.json](https://raw.githubusercontent.com/namillis/playtorrio-altstore/main/playtorrio-ios.json) |
 
-The page will be available at:
-
-```text
-https://namillis.github.io/playtorrio-altstore/install.html
-```
+GitHub Pages serves the source with an `application/json` content type. Deployments may take up to 10 minutes to propagate through the Pages cache after a merge.
 
 ## Repository contents
 
