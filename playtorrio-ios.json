@@ -3,8 +3,8 @@
   "identifier": "community.playtorrio.ios",
   "subtitle": "Your Ultimate Entertainment Hub — unofficial AltStore-compatible source for iOS and iPadOS.",
   "description": "An unofficial AltStore source for PlayTorrio on iOS and iPadOS, compatible with signing apps that consume the standard AltStore source format. PlayTorrio is an open source entertainment platform for streaming and downloading movies, shows, games, music, books, manga, and more. This source includes the current PlayTorrio V3 release and legacy PlayTorrio V2 releases. IPAs are served directly from the project's public GitHub releases. This community source is not affiliated with or supported by the PlayTorrio developer.",
-  "iconURL": "https://raw.githubusercontent.com/ayman708-UX/PlayTorrioV3/main/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
-  "headerURL": "https://raw.githubusercontent.com/ayman708-UX/PlayTorrioV3/main/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+  "iconURL": "https://raw.githubusercontent.com/ayman708-UX/PlayTorrioV3/main/assets/icon.png",
+  "headerURL": "https://raw.githubusercontent.com/ayman708-UX/PlayTorrioV3/main/assets/icon.png",
   "website": "https://playtorrio.xyz",
   "tintColor": "#6030A8",
   "sourceURL": "https://namillis.github.io/playtorrio-altstore/playtorrio-ios.json",
@@ -19,7 +19,7 @@
       "developerName": "PlayTorrio",
       "subtitle": "Stream faster. Smarter.",
       "localizedDescription": "PlayTorrio V3 — an open source entertainment platform for streaming and downloading movies, shows, games, music, books, manga, and more. Features streaming and torrent modes, an in-app torrent scraper, Jackett and Prowlarr support, Jellyfin integration, Stremio add-ons, live TV and IPTV, automatic subtitles, comics, manga, audiobooks, and YouTube Music integration. Requires iPhone or iPad with iOS 14.0 or later.",
-      "iconURL": "https://raw.githubusercontent.com/ayman708-UX/PlayTorrioV3/main/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "iconURL": "https://raw.githubusercontent.com/ayman708-UX/PlayTorrioV3/main/assets/icon.png",
       "tintColor": "#6030A8",
       "category": "entertainment",
       "appPermissions": {
@@ -137,7 +137,7 @@
       "date": "2026-08-27",
       "notify": false,
       "appID": "com.example.playtorrio",
-      "imageURL": "https://raw.githubusercontent.com/ayman708-UX/PlayTorrioV3/main/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png"
+      "imageURL": "https://raw.githubusercontent.com/ayman708-UX/PlayTorrioV3/main/assets/icon.png"
     },
     {
       "title": "PlayTorrio Legacy 1.4.0",
