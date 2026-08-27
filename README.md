@@ -10,18 +10,6 @@ An **unofficial, community-maintained AltStore-format source** for [PlayTorrio](
 
 IPAs are downloaded directly from PlayTorrio's public GitHub releases. This repository only publishes source metadata and is not affiliated with or supported by the PlayTorrio developer.
 
-## Compatible signing apps
-
-Any signing app that consumes the standard AltStore source format can use this repository. Known-compatible options include:
-
-- **[AltStore Classic](https://altstore.io/)** — the original desktop-paired signer, using AltServer on a Mac or PC
-- **[AltStore PAL](https://altstore.io/)** — AltStore's alternative app marketplace for users in the European Union
-- **[Scarlet](https://usescarlet.com/)** — an on-device IPA installer
-- **[Sideloadly](https://sideloadly.io/)** — a desktop-based sideloader with source support
-- **[LiveContainer](https://github.com/LiveContainer/LiveContainer)** — an app launcher that imports and runs compatible IPA files inside a container
-
-Apps that accept a source URL can use the hosted JSON directly. LiveContainer can import the IPA downloaded from a version's release link; its own compatibility limitations still apply.
-
 ## Quick start
 
 ### One-tap install
@@ -58,6 +46,18 @@ Once added, choose PlayTorrio V3 or PlayTorrio Legacy and install the desired ve
 ### Why are V3 and Legacy separate apps?
 
 The V3 IPA uses a different bundle identifier from V2. iOS therefore treats V3 as a separate application rather than an update to the legacy app. Keeping two source entries accurately represents the packages and lets existing V2 users retain access to the older releases.
+
+## Compatible signing apps
+
+Any signing app that consumes the standard AltStore source format can use this repository. Known-compatible options include:
+
+- **[AltStore Classic](https://altstore.io/)** — the original desktop-paired signer, using AltServer on a Mac or PC
+- **[AltStore PAL](https://altstore.io/)** — AltStore's alternative app marketplace for users in the European Union
+- **[Scarlet](https://usescarlet.com/)** — an on-device IPA installer
+- **[Sideloadly](https://sideloadly.io/)** — a desktop-based sideloader with source support
+- **[LiveContainer](https://github.com/LiveContainer/LiveContainer)** — an app launcher that imports and runs compatible IPA files inside a container
+
+Apps that accept a source URL can use the hosted JSON directly. LiveContainer can import the IPA downloaded from a version's release link; its own compatibility limitations still apply.
 
 ## Metadata verification
 
