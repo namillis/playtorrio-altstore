@@ -28,6 +28,16 @@
       },
       "versions": [
         {
+          "version": "1.0.2",
+          "buildVersion": "3",
+          "date": "2026-08-27",
+          "localizedDescription": "Torrent streaming fixed on ios\nUI Fixes",
+          "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV3/releases/download/v1.0.2/PlayTorrio-iOS.ipa",
+          "size": 60016920,
+          "sha256": "dd7f3298e3846c2bbc1a0533273ba03bc4af1f05cc61e3c1158391f2990f1c8a",
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "1.0.1",
           "buildVersion": "2",
           "date": "2026-08-27",
@@ -48,11 +58,11 @@
           "minOSVersion": "14.0"
         }
       ],
-      "version": "1.0.1",
+      "version": "1.0.2",
       "versionDate": "2026-08-27",
-      "versionDescription": "Subtitle fixes on some android devices\nUI Fixes\nUI improvements\nNew PlayTorrioHTTP sources",
-      "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV3/releases/download/v1.0.1/PlayTorrio-iOS.ipa",
-      "size": 36991770,
+      "versionDescription": "Torrent streaming fixed on ios\nUI Fixes",
+      "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV3/releases/download/v1.0.2/PlayTorrio-iOS.ipa",
+      "size": 60016920,
       "minOSVersion": "14.0"
     },
     {
@@ -139,6 +149,16 @@
     }
   ],
   "news": [
+    {
+      "title": "PlayTorrio V3 1.0.2",
+      "identifier": "com-example-playtorrio-1-0-2-b3-iphone-ipad",
+      "caption": "Torrent streaming fixed on ios · UI Fixes",
+      "tintColor": "6030A8",
+      "date": "2026-08-27",
+      "notify": false,
+      "appID": "com.example.playtorrio",
+      "imageURL": "https://raw.githubusercontent.com/ayman708-UX/PlayTorrioV3/main/assets/icon.png"
+    },
     {
       "title": "PlayTorrio V3 1.0.1",
       "identifier": "com-example-playtorrio-1-0-1-b2-iphone-ipad",
