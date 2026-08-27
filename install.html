@@ -561,14 +561,25 @@
       white-space: pre-line;
     }
 
+    .release-links {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+    }
+
+    .release-link,
     .download-link {
       color: var(--purple-light);
       font-weight: 700;
       text-decoration: none;
     }
 
+    .release-link:hover,
+    .release-link:focus-visible,
     .download-link:hover,
     .download-link:focus-visible { text-decoration: underline; }
+
+    .link-separator { color: var(--line); }
 
     .loading,
     .load-error {
@@ -712,7 +723,7 @@
               <th>Date</th>
               <th>Minimum iOS</th>
               <th>Size</th>
-              <th></th>
+              <th>Links</th>
             </tr>
           </thead>
           <tbody id="version-rows">
@@ -775,6 +786,17 @@
 
     function formatSize(bytes) {
       return bytes > 0 ? (bytes / 1048576).toFixed(1) + " MB" : "—";
+    }
+
+    function getReleaseURL(downloadURL) {
+      try {
+        var url = new URL(downloadURL);
+        var match = url.pathname.match(/^\/([^/]+)\/([^/]+)\/releases\/download\/([^/]+)\//);
+        if (url.protocol !== "https:" || url.hostname !== "github.com" || !match) return "";
+        return url.origin + "/" + match[1] + "/" + match[2] + "/releases/tag/" + match[3];
+      } catch (error) {
+        return "";
+      }
     }
 
     function addDetail(list, label, value) {
@@ -883,11 +905,31 @@
         });
 
         var downloadCell = document.createElement("td");
+        var links = document.createElement("div");
+        var releaseURL = getReleaseURL(entry.version.downloadURL);
+        links.className = "release-links";
+
+        if (releaseURL) {
+          var release = document.createElement("a");
+          var separator = document.createElement("span");
+          release.className = "release-link";
+          release.href = releaseURL;
+          release.textContent = "Release ↗";
+          release.setAttribute("aria-label", "View " + (entry.app.name || "PlayTorrio") + " " + entry.version.version + " release on GitHub");
+          separator.className = "link-separator";
+          separator.setAttribute("aria-hidden", "true");
+          separator.textContent = "·";
+          links.appendChild(release);
+          links.appendChild(separator);
+        }
+
         var download = document.createElement("a");
         download.className = "download-link";
         download.href = entry.version.downloadURL;
         download.textContent = "IPA ↓";
-        downloadCell.appendChild(download);
+        download.setAttribute("aria-label", "Download " + (entry.app.name || "PlayTorrio") + " " + entry.version.version + " IPA");
+        links.appendChild(download);
+        downloadCell.appendChild(links);
         row.appendChild(downloadCell);
         body.appendChild(row);
 
