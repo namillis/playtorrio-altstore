@@ -10,6 +10,18 @@ An **unofficial, community-maintained AltStore-format source** for [PlayTorrio](
 
 IPAs are downloaded directly from PlayTorrio's public GitHub releases. This repository only publishes source metadata and is not affiliated with or supported by the PlayTorrio developer.
 
+## Compatible signing apps
+
+Any signing app that consumes the standard AltStore source format can use this repository. Known-compatible options include:
+
+- **[AltStore Classic](https://altstore.io/)** — the original desktop-paired signer, using AltServer on a Mac or PC
+- **[AltStore PAL](https://altstore.io/)** — AltStore's alternative app marketplace for users in the European Union
+- **[Scarlet](https://usescarlet.com/)** — an on-device IPA installer
+- **[Sideloadly](https://sideloadly.io/)** — a desktop-based sideloader with source support
+- **[LiveContainer](https://github.com/LiveContainer/LiveContainer)** — an app launcher that imports and runs compatible IPA files inside a container
+
+Apps that accept a source URL can use the hosted JSON directly. LiveContainer can import the IPA downloaded from a version's release link; its own compatibility limitations still apply.
+
 ## Quick start
 
 ### One-tap install
@@ -40,7 +52,7 @@ Once added, choose PlayTorrio V3 or PlayTorrio Legacy and install the desired ve
 
 | App | Bundle identifier | Latest version | Minimum iOS | Upstream |
 |---|---|---:|---:|---|
-| PlayTorrio V3 | `com.example.playtorrio` | 1.0.0 (build 1) | 14.0 | [PlayTorrioV3](https://github.com/ayman708-UX/PlayTorrioV3/releases) |
+| PlayTorrio V3 | `com.example.playtorrio` | 1.0.1 (build 2) | 14.0 | [PlayTorrioV3](https://github.com/ayman708-UX/PlayTorrioV3/releases) |
 | PlayTorrio Legacy | `com.playtorrio.app` | 1.4.0 (build 41) | 13.0 | [PlayTorrioV2](https://github.com/ayman708-UX/PlayTorrioV2/releases) |
 
 ### Why are V3 and Legacy separate apps?
