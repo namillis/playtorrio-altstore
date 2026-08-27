@@ -1,0 +1,163 @@
+{
+  "name": "PlayTorrio iOS (Unofficial AltStore Source)",
+  "identifier": "community.playtorrio.ios",
+  "subtitle": "Your Ultimate Entertainment Hub — unofficial AltStore-compatible source for iOS and iPadOS.",
+  "description": "An unofficial AltStore source for PlayTorrio on iOS and iPadOS, compatible with signing apps that consume the standard AltStore source format. PlayTorrio is an open source entertainment platform for streaming and downloading movies, shows, games, music, books, manga, and more. This source includes the current PlayTorrio V3 release and legacy PlayTorrio V2 releases. IPAs are served directly from the project's public GitHub releases. This community source is not affiliated with or supported by the PlayTorrio developer.",
+  "iconURL": "https://raw.githubusercontent.com/ayman708-UX/PlayTorrioV3/main/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+  "headerURL": "https://raw.githubusercontent.com/ayman708-UX/PlayTorrioV3/main/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+  "website": "https://playtorrio.xyz",
+  "tintColor": "#6030A8",
+  "sourceURL": "https://raw.githubusercontent.com/namillis/playtorrio-altstore/main/playtorrio-ios.json",
+  "userInfo": {
+    "name": "Unofficial AltStore Source",
+    "role": "Community Mirror"
+  },
+  "apps": [
+    {
+      "name": "PlayTorrio V3",
+      "bundleIdentifier": "com.example.playtorrio",
+      "developerName": "PlayTorrio",
+      "subtitle": "Stream faster. Smarter.",
+      "localizedDescription": "PlayTorrio V3 — an open source entertainment platform for streaming and downloading movies, shows, games, music, books, manga, and more. Features streaming and torrent modes, an in-app torrent scraper, Jackett and Prowlarr support, Jellyfin integration, Stremio add-ons, live TV and IPTV, automatic subtitles, comics, manga, audiobooks, and YouTube Music integration. Requires iPhone or iPad with iOS 14.0 or later.",
+      "iconURL": "https://raw.githubusercontent.com/ayman708-UX/PlayTorrioV3/main/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "tintColor": "#6030A8",
+      "category": "entertainment",
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "buildVersion": "1",
+          "date": "2026-08-27",
+          "localizedDescription": "Initial release of PlayTorrio V3.",
+          "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV3/releases/download/v1.0.0/PlayTorrio-iOS.ipa",
+          "size": 36942085,
+          "sha256": "5f81592e2e392540c790b481727a46d2f540c851afef5ada47a555b1293da525",
+          "minOSVersion": "14.0"
+        }
+      ],
+      "version": "1.0.0",
+      "versionDate": "2026-08-27",
+      "versionDescription": "Initial release of PlayTorrio V3.",
+      "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV3/releases/download/v1.0.0/PlayTorrio-iOS.ipa",
+      "size": 36942085,
+      "minOSVersion": "14.0"
+    },
+    {
+      "name": "PlayTorrio Legacy",
+      "bundleIdentifier": "com.playtorrio.app",
+      "developerName": "PlayTorrio",
+      "subtitle": "Legacy PlayTorrio V2 releases.",
+      "localizedDescription": "PlayTorrio V2 — the legacy version of the open source entertainment platform. Includes a built-in torrent engine, WebTorrent support, debrid provider integration, IPTV with M3U playlist and EPG support, Trakt sync, anime and Asian drama sections, comics and manga, audiobooks, and a media downloader. Requires iPhone or iPad with iOS 13.0 or later.",
+      "iconURL": "https://raw.githubusercontent.com/ayman708-UX/PlayTorrioV2/main/assets/icon/icon.png",
+      "tintColor": "#6030A8",
+      "category": "entertainment",
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "versions": [
+        {
+          "version": "1.4.0",
+          "buildVersion": "41",
+          "date": "2026-07-01",
+          "localizedDescription": "Player improvements\nSubtitle support improved\nTrakt fixes\nContinue watching fixes\nEpisode selection from metadata improved",
+          "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV2/releases/download/v1.4.0/PlayTorrio-iOS.ipa",
+          "size": 27245067,
+          "sha256": "8de81297d09c522b5bc345885e46c15c856cc63a6dbb324b06508551aea35d6e",
+          "minOSVersion": "13.0"
+        },
+        {
+          "version": "1.3.9",
+          "buildVersion": "40",
+          "date": "2026-06-27",
+          "localizedDescription": "Fix Android torrent engine",
+          "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV2/releases/download/v1.3.9/PlayTorrio-iOS.ipa",
+          "size": 26264295,
+          "sha256": "135b3446875a2ec4d1ae7703ac5990c5c504066cab9dd505b931b91fcf37194b",
+          "minOSVersion": "13.0"
+        },
+        {
+          "version": "1.3.8",
+          "buildVersion": "39",
+          "date": "2026-06-26",
+          "localizedDescription": "Torrent engine updated\nWebTorrent support added\nSearch for downloaded music added\nRemoved broken Deezer proxy",
+          "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV2/releases/download/v1.3.8/PlayTorrio-iOS.ipa",
+          "size": 26264241,
+          "sha256": "677464d876db57b790d494aadf54c0a178ebd76df9bfac4f237addaa9b9f9dbe",
+          "minOSVersion": "13.0"
+        },
+        {
+          "version": "1.3.7",
+          "buildVersion": "38",
+          "date": "2026-06-22",
+          "localizedDescription": "IPTV scraping fixed and functional\nAdded a copy button for URL, user, and password",
+          "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV2/releases/download/v1.3.7/PlayTorrio-iOS.ipa",
+          "size": 24732890,
+          "sha256": "2395f38312c582c5da27498b840e3936b9b4e2c1b73a06245881f7c5e75fde8b",
+          "minOSVersion": "13.0"
+        },
+        {
+          "version": "1.3.6",
+          "buildVersion": "37",
+          "date": "2026-06-19",
+          "localizedDescription": "Audiobook generation fixes\nLinux release fixed\nGeneral fixes",
+          "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV2/releases/download/v1.3.6/PlayTorrio-iOS.ipa",
+          "size": 24730499,
+          "sha256": "38e6154d54f59c6677b226c80d257e1a7c7d8a26110275ddcc375d4b8795062e",
+          "minOSVersion": "13.0"
+        },
+        {
+          "version": "1.3.5",
+          "buildVersion": "36",
+          "date": "2026-06-14",
+          "localizedDescription": "Linux release\nContinue watching fixes\nLive Matches new source\nPlayer cache increased",
+          "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV2/releases/download/v1.3.5/PlayTorrio-iOS.ipa",
+          "size": 24730089,
+          "sha256": "88d23a3b7db732914d81f9001441814a04ec8f0c31aae946d8c9c074e61df8a6",
+          "minOSVersion": "13.0"
+        }
+      ],
+      "version": "1.4.0",
+      "versionDate": "2026-07-01",
+      "versionDescription": "Player improvements\nSubtitle support improved\nTrakt fixes\nContinue watching fixes\nEpisode selection from metadata improved",
+      "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV2/releases/download/v1.4.0/PlayTorrio-iOS.ipa",
+      "size": 27245067,
+      "minOSVersion": "13.0"
+    }
+  ],
+  "news": [
+    {
+      "title": "PlayTorrio V3 1.0.0",
+      "identifier": "com-example-playtorrio-1-0-0-b1-iphone-ipad",
+      "caption": "Initial release of PlayTorrio V3",
+      "tintColor": "6030A8",
+      "date": "2026-08-27",
+      "notify": false,
+      "appID": "com.example.playtorrio",
+      "imageURL": "https://raw.githubusercontent.com/ayman708-UX/PlayTorrioV3/main/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png"
+    },
+    {
+      "title": "PlayTorrio Legacy 1.4.0",
+      "identifier": "com-playtorrio-app-1-4-0-b41-iphone-ipad",
+      "caption": "Player improvements, better subtitles, Trakt, and continue-watching fixes",
+      "tintColor": "6030A8",
+      "date": "2026-07-01",
+      "notify": false,
+      "appID": "com.playtorrio.app",
+      "imageURL": "https://raw.githubusercontent.com/ayman708-UX/PlayTorrioV2/main/assets/icon/icon.png"
+    },
+    {
+      "title": "PlayTorrio Legacy 1.3.8",
+      "identifier": "com-playtorrio-app-1-3-8-b39-iphone-ipad",
+      "caption": "Torrent engine updated and WebTorrent support added",
+      "tintColor": "6030A8",
+      "date": "2026-06-26",
+      "notify": false,
+      "appID": "com.playtorrio.app",
+      "imageURL": "https://raw.githubusercontent.com/ayman708-UX/PlayTorrioV2/main/assets/icon/icon.png"
+    }
+  ]
+}
