@@ -28,6 +28,16 @@
       },
       "versions": [
         {
+          "version": "1.0.1",
+          "buildVersion": "2",
+          "date": "2026-08-27",
+          "localizedDescription": "Subtitle fixes on some Android devices\nUI fixes\nUI improvements\nNew PlayTorrioHTTP sources",
+          "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV3/releases/download/v1.0.1/PlayTorrio-iOS.ipa",
+          "size": 36991770,
+          "sha256": "978741ad3fec1b5c2a5273cfdd6f404cdb397da2e255ecd410b12e732dde5280",
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "1.0.0",
           "buildVersion": "1",
           "date": "2026-08-27",
@@ -38,11 +48,11 @@
           "minOSVersion": "14.0"
         }
       ],
-      "version": "1.0.0",
+      "version": "1.0.1",
       "versionDate": "2026-08-27",
-      "versionDescription": "Initial release of PlayTorrio V3.",
-      "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV3/releases/download/v1.0.0/PlayTorrio-iOS.ipa",
-      "size": 36942085,
+      "versionDescription": "Subtitle fixes on some Android devices\nUI fixes\nUI improvements\nNew PlayTorrioHTTP sources",
+      "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV3/releases/download/v1.0.1/PlayTorrio-iOS.ipa",
+      "size": 36991770,
       "minOSVersion": "14.0"
     },
     {
@@ -129,6 +139,16 @@
     }
   ],
   "news": [
+    {
+      "title": "PlayTorrio V3 1.0.1",
+      "identifier": "com-example-playtorrio-1-0-1-b2-iphone-ipad",
+      "caption": "Subtitle fixes, UI improvements, and new PlayTorrioHTTP sources",
+      "tintColor": "6030A8",
+      "date": "2026-08-27",
+      "notify": false,
+      "appID": "com.example.playtorrio",
+      "imageURL": "https://raw.githubusercontent.com/ayman708-UX/PlayTorrioV3/main/assets/icon.png"
+    },
     {
       "title": "PlayTorrio V3 1.0.0",
       "identifier": "com-example-playtorrio-1-0-0-b1-iphone-ipad",
