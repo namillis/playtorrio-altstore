@@ -3,6 +3,7 @@
 [![One-tap install](https://img.shields.io/badge/Install-one--tap-6030A8)](https://namillis.github.io/playtorrio-altstore/install.html)
 [![AltStore source](https://img.shields.io/badge/AltStore-source-6030A8)](https://namillis.github.io/playtorrio-altstore/playtorrio-ios.json)
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-live-2ea44f)](https://namillis.github.io/playtorrio-altstore/install.html)
+[![Update source](https://github.com/namillis/playtorrio-altstore/actions/workflows/update-source.yml/badge.svg)](https://github.com/namillis/playtorrio-altstore/actions/workflows/update-source.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![iOS apps](https://img.shields.io/badge/iOS-PlayTorrio%20V3%20%2B%20Legacy-6030A8)](playtorrio-ios.json)
 
@@ -72,9 +73,15 @@ Published metadata is read directly from each IPA's main `Info.plist`, including
 
 The source uses version-pinned GitHub release URLs so a future release cannot silently change an older entry's file, size, or hash.
 
+## Automatic updates
+
+The [Update PlayTorrio source](https://github.com/namillis/playtorrio-altstore/actions/workflows/update-source.yml) workflow runs at minute 17 every hour and can also be started manually. It checks the latest PlayTorrio V3 release, downloads a changed IPA, verifies its embedded metadata and SHA-256, then updates the source JSON and README in one commit.
+
+The same workflow deploys the verified files to GitHub Pages. It uses the repository's built-in `GITHUB_TOKEN`; no personal access token or external machine is required.
+
 ## Live endpoints
 
-GitHub Pages is enabled and serving both the installation page and source JSON from the `main` branch.
+GitHub Pages is deployed by the updater workflow and serves both the installation page and source JSON.
 
 | Resource | Live URL |
 |---|---|
@@ -88,6 +95,10 @@ GitHub Pages serves the source with an `application/json` content type. Deployme
 
 ```text
 playtorrio-altstore/
+├── .github/workflows/update-source.yml
+├── scripts/
+│   ├── test_update_playtorrio.py
+│   └── update_playtorrio.py
 ├── README.md
 ├── LICENSE
 ├── install.html
