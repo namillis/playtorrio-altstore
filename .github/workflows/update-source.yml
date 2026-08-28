@@ -1,6 +1,12 @@
 name: Update PlayTorrio source
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/update-source.yml"
+      - "install.html"
+      - "playtorrio-ios.json"
   schedule:
     - cron: "*/5 * * * *"
   workflow_dispatch:
@@ -46,7 +52,7 @@ jobs:
           CHANGED: ${{ steps.update.outputs.changed }}
           EVENT_NAME: ${{ github.event_name }}
         run: |
-          if [[ "$CHANGED" == "true" || "$EVENT_NAME" == "workflow_dispatch" ]]; then
+          if [[ "$CHANGED" == "true" || "$EVENT_NAME" == "workflow_dispatch" || "$EVENT_NAME" == "push" ]]; then
             echo "deploy=true" >> "$GITHUB_OUTPUT"
           else
             echo "deploy=false" >> "$GITHUB_OUTPUT"

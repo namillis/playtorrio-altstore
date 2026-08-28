@@ -75,7 +75,7 @@ The source uses version-pinned GitHub release URLs so a future release cannot si
 
 ## Automatic updates
 
-The [Update PlayTorrio source](https://github.com/namillis/playtorrio-altstore/actions/workflows/update-source.yml) workflow runs every 15 minutes and can also be started manually. It checks the latest PlayTorrio V3 release, downloads a changed IPA, verifies its embedded metadata and SHA-256, then updates the source JSON and README in one commit.
+The [Update PlayTorrio source](https://github.com/namillis/playtorrio-altstore/actions/workflows/update-source.yml) workflow is configured to check every 5 minutes and can also be started manually. It checks the latest PlayTorrio V3 release, downloads a changed IPA, verifies its embedded metadata and SHA-256, then updates the source JSON and README in one commit.
 
 The same workflow deploys the verified files to GitHub Pages. It uses the repository's built-in `GITHUB_TOKEN`; no personal access token or external machine is required.
 
