@@ -2,7 +2,7 @@ name: Update PlayTorrio source
 
 on:
   schedule:
-    - cron: "17 * * * *"
+    - cron: "1,16,31,46 * * * *"
   workflow_dispatch:
   repository_dispatch:
     types: [playtorrio-v3-release]
