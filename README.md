@@ -75,9 +75,9 @@ The source uses version-pinned GitHub release URLs so a future release cannot si
 
 ## Automatic updates
 
-The [Update PlayTorrio source](https://github.com/namillis/playtorrio-altstore/actions/workflows/update-source.yml) workflow is configured to check every 5 minutes and can also be started manually. It checks the latest PlayTorrio V3 release, downloads a changed IPA, verifies its embedded metadata and SHA-256, then updates the source JSON and README in one commit.
+The [Keep PlayTorrio updater running](https://github.com/namillis/playtorrio-altstore/actions/workflows/update-loop.yml) workflow uses a 15-minute GitHub Environment wait timer, then starts the source updater and queues its next delayed run. Environment wait time does not consume billable runner time.
 
-The same workflow deploys the verified files to GitHub Pages. It uses the repository's built-in `GITHUB_TOKEN`; no personal access token or external machine is required.
+The [Update PlayTorrio source](https://github.com/namillis/playtorrio-altstore/actions/workflows/update-source.yml) workflow checks the latest PlayTorrio V3 release, downloads a changed IPA, verifies its embedded metadata and SHA-256, then updates the source JSON and README in one commit and deploys the verified files to GitHub Pages. Both workflows use the repository's built-in `GITHUB_TOKEN`; no personal access token or external machine is required.
 
 ## Live endpoints
 
@@ -95,6 +95,7 @@ GitHub Pages serves the source with an `application/json` content type. Deployme
 
 ```text
 playtorrio-altstore/
+├── .github/workflows/update-loop.yml
 ├── .github/workflows/update-source.yml
 ├── scripts/
 │   ├── test_update_playtorrio.py

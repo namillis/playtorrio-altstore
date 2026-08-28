@@ -1,0 +1,34 @@
+name: Keep PlayTorrio updater running
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: playtorrio-updater-loop
+  cancel-in-progress: false
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  dispatch:
+    environment: updater-delay
+    runs-on: ubuntu-latest
+    steps:
+      - name: Queue next delayed check
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for attempt in 1 2 3; do
+            if gh workflow run update-loop.yml --repo "$GITHUB_REPOSITORY" --ref main; then
+              exit 0
+            fi
+            sleep $((attempt * 5))
+          done
+          exit 1
+
+      - name: Run source updater
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run update-source.yml --repo "$GITHUB_REPOSITORY" --ref main -f force_deploy=false
