@@ -28,6 +28,16 @@
       },
       "versions": [
         {
+          "version": "1.0.5",
+          "buildVersion": "6",
+          "date": "2026-08-28",
+          "localizedDescription": "Subtitle fixes\nUI Fixes\nUI improvements",
+          "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV3/releases/download/v1.0.5/PlayTorrio-iOS.ipa",
+          "size": 46681975,
+          "sha256": "1a6f0f12942c0b55118391b882108292f0d280a5f2224d68a9a90bc681ad990e",
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "1.0.4",
           "buildVersion": "5",
           "date": "2026-08-28",
@@ -78,11 +88,11 @@
           "minOSVersion": "14.0"
         }
       ],
-      "version": "1.0.4",
+      "version": "1.0.5",
       "versionDate": "2026-08-28",
-      "versionDescription": "Player improvements\nSubtitle fixes\nsize filtering added",
-      "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV3/releases/download/v1.0.4/PlayTorrio-iOS.ipa",
-      "size": 61815343,
+      "versionDescription": "Subtitle fixes\nUI Fixes\nUI improvements",
+      "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV3/releases/download/v1.0.5/PlayTorrio-iOS.ipa",
+      "size": 46681975,
       "minOSVersion": "14.0"
     },
     {
@@ -169,6 +179,16 @@
     }
   ],
   "news": [
+    {
+      "title": "PlayTorrio V3 1.0.5",
+      "identifier": "com-example-playtorrio-1-0-5-b6-iphone-ipad",
+      "caption": "Subtitle fixes · UI Fixes · UI improvements",
+      "tintColor": "6030A8",
+      "date": "2026-08-28",
+      "notify": false,
+      "appID": "com.example.playtorrio",
+      "imageURL": "https://raw.githubusercontent.com/ayman708-UX/PlayTorrioV3/main/assets/icon.png"
+    },
     {
       "title": "PlayTorrio V3 1.0.4",
       "identifier": "com-example-playtorrio-1-0-4-b5-iphone-ipad",
