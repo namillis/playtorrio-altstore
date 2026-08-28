@@ -28,6 +28,16 @@
       },
       "versions": [
         {
+          "version": "1.0.6",
+          "buildVersion": "7",
+          "date": "2026-08-28",
+          "localizedDescription": "Streaming proxy enhanced, less ram and cpu\nfaster streaming\nFix torrent streaming\nFix ios",
+          "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV3/releases/download/v1.0.6/PlayTorrio-iOS.ipa",
+          "size": 46665302,
+          "sha256": "940983b759e756a093b19fb5e42aa93309a1601e8e8fb3a533f2265b107c973c",
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "1.0.5",
           "buildVersion": "6",
           "date": "2026-08-28",
@@ -88,11 +98,11 @@
           "minOSVersion": "14.0"
         }
       ],
-      "version": "1.0.5",
+      "version": "1.0.6",
       "versionDate": "2026-08-28",
-      "versionDescription": "Subtitle fixes\nUI Fixes\nUI improvements",
-      "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV3/releases/download/v1.0.5/PlayTorrio-iOS.ipa",
-      "size": 46681975,
+      "versionDescription": "Streaming proxy enhanced, less ram and cpu\nfaster streaming\nFix torrent streaming\nFix ios",
+      "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV3/releases/download/v1.0.6/PlayTorrio-iOS.ipa",
+      "size": 46665302,
       "minOSVersion": "14.0"
     },
     {
@@ -179,6 +189,16 @@
     }
   ],
   "news": [
+    {
+      "title": "PlayTorrio V3 1.0.6",
+      "identifier": "com-example-playtorrio-1-0-6-b7-iphone-ipad",
+      "caption": "Streaming proxy enhanced, less ram and cpu · faster streaming · Fix torrent streaming · Fix ios",
+      "tintColor": "6030A8",
+      "date": "2026-08-28",
+      "notify": false,
+      "appID": "com.example.playtorrio",
+      "imageURL": "https://raw.githubusercontent.com/ayman708-UX/PlayTorrioV3/main/assets/icon.png"
+    },
     {
       "title": "PlayTorrio V3 1.0.5",
       "identifier": "com-example-playtorrio-1-0-5-b6-iphone-ipad",
