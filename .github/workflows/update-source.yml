@@ -64,6 +64,7 @@ jobs:
         if: steps.decision.outputs.deploy == 'true'
         run: |
           mkdir _site
+          cp install.html _site/index.html
           cp install.html playtorrio-ios.json _site/
 
       - name: Configure Pages
