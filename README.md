@@ -1,8 +1,8 @@
 # PlayTorrio — Unofficial AltStore Source
 
-[![One-tap install](https://img.shields.io/badge/Install-one--tap-6030A8)](https://namillis.github.io/playtorrio-altstore/install.html)
+[![One-tap install](https://img.shields.io/badge/Install-one--tap-6030A8)](https://namillis.github.io/playtorrio-altstore/)
 [![AltStore source](https://img.shields.io/badge/AltStore-source-6030A8)](https://namillis.github.io/playtorrio-altstore/playtorrio-ios.json)
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-live-2ea44f)](https://namillis.github.io/playtorrio-altstore/install.html)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-live-2ea44f)](https://namillis.github.io/playtorrio-altstore/)
 [![Update source](https://github.com/namillis/playtorrio-altstore/actions/workflows/update-source.yml/badge.svg)](https://github.com/namillis/playtorrio-altstore/actions/workflows/update-source.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![iOS apps](https://img.shields.io/badge/iOS-PlayTorrio%20V3%20%2B%20Legacy-6030A8)](playtorrio-ios.json)
@@ -17,7 +17,7 @@ IPAs are downloaded directly from PlayTorrio's public GitHub releases. This repo
 
 Open the live installation page on your iPhone or iPad:
 
-[**Add PlayTorrio source →**](https://namillis.github.io/playtorrio-altstore/install.html)
+[**Add PlayTorrio source →**](https://namillis.github.io/playtorrio-altstore/)
 
 The page can open the source directly in AltStore, SideStore, or LiveContainer. It also provides a copy button for other signing apps.
 
@@ -85,7 +85,7 @@ GitHub Pages is deployed by the updater workflow and serves both the installatio
 
 | Resource | Live URL |
 |---|---|
-| One-tap installation page | [namillis.github.io/playtorrio-altstore/install.html](https://namillis.github.io/playtorrio-altstore/install.html) |
+| One-tap installation page | [namillis.github.io/playtorrio-altstore/](https://namillis.github.io/playtorrio-altstore/) |
 | AltStore source JSON | [namillis.github.io/playtorrio-altstore/playtorrio-ios.json](https://namillis.github.io/playtorrio-altstore/playtorrio-ios.json) |
 | Raw JSON fallback | [raw.githubusercontent.com/.../playtorrio-ios.json](https://raw.githubusercontent.com/namillis/playtorrio-altstore/main/playtorrio-ios.json) |
 
