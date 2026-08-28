@@ -28,6 +28,16 @@
       },
       "versions": [
         {
+          "version": "1.0.4",
+          "buildVersion": "5",
+          "date": "2026-08-28",
+          "localizedDescription": "Player improvements\nSubtitle fixes\nsize filtering added",
+          "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV3/releases/download/v1.0.4/PlayTorrio-iOS.ipa",
+          "size": 61815343,
+          "sha256": "a399dcfe484f8e55547145eae9f356ba298d75bf81dcceafb46d1b7d4682c4cb",
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "1.0.3",
           "buildVersion": "4",
           "date": "2026-08-28",
@@ -68,11 +78,11 @@
           "minOSVersion": "14.0"
         }
       ],
-      "version": "1.0.3",
+      "version": "1.0.4",
       "versionDate": "2026-08-28",
-      "versionDescription": "libmpv player added\nlibass subtitle customization added\nplayer significantly improved\nlive tv improved\naudiobook generation added\nupdate dialog popup fixed\nlive tv results search\nnew live tv channels added for college football\nUI Fixes\nGeneral fixes\nMacOS and ios improved and issues fixed\ntorrent streaming on ios fixed",
-      "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV3/releases/download/v1.0.3/PlayTorrio-iOS.ipa",
-      "size": 61800855,
+      "versionDescription": "Player improvements\nSubtitle fixes\nsize filtering added",
+      "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV3/releases/download/v1.0.4/PlayTorrio-iOS.ipa",
+      "size": 61815343,
       "minOSVersion": "14.0"
     },
     {
@@ -159,6 +169,16 @@
     }
   ],
   "news": [
+    {
+      "title": "PlayTorrio V3 1.0.4",
+      "identifier": "com-example-playtorrio-1-0-4-b5-iphone-ipad",
+      "caption": "Player improvements · Subtitle fixes · size filtering added",
+      "tintColor": "6030A8",
+      "date": "2026-08-28",
+      "notify": false,
+      "appID": "com.example.playtorrio",
+      "imageURL": "https://raw.githubusercontent.com/ayman708-UX/PlayTorrioV3/main/assets/icon.png"
+    },
     {
       "title": "PlayTorrio V3 1.0.3",
       "identifier": "com-example-playtorrio-1-0-3-b4-iphone-ipad",
