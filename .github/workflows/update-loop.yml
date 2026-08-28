@@ -1,4 +1,4 @@
-name: Keep PlayTorrio updater running
+name: Keep AltStore sources updated
 
 on:
   workflow_dispatch:
@@ -22,7 +22,9 @@ jobs:
           app-id: ${{ vars.UPDATER_APP_ID }}
           private-key: ${{ secrets.UPDATER_APP_PRIVATE_KEY }}
           owner: ${{ github.repository_owner }}
-          repositories: playtorrio-altstore
+          repositories: |
+            playtorrio-altstore
+            nuvio-altstore
           permission-actions: write
 
       - name: Queue next delayed check
@@ -37,7 +39,12 @@ jobs:
           done
           exit 1
 
-      - name: Run source updater
+      - name: Run PlayTorrio updater
         env:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
         run: gh workflow run source-updater.yml --repo "$GITHUB_REPOSITORY" --ref main -f force_deploy=false
+
+      - name: Run Nuvio updater
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+        run: gh workflow run source-updater.yml --repo "${{ github.repository_owner }}/nuvio-altstore" --ref main -f force_deploy=false

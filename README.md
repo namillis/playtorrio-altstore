@@ -75,7 +75,7 @@ The source uses version-pinned GitHub release URLs so a future release cannot si
 
 ## Automatic updates
 
-The [Keep PlayTorrio updater running](https://github.com/namillis/playtorrio-altstore/actions/workflows/update-loop.yml) workflow uses a 15-minute GitHub Environment wait timer, then starts the source updater and queues its next delayed run. Environment wait time does not consume billable runner time.
+The GitHub App-authenticated [AltStore updater loop](https://github.com/namillis/playtorrio-altstore/actions/workflows/update-loop.yml) uses a 60-minute GitHub Environment wait timer, then starts the PlayTorrio and Nuvio source updaters and queues its next delayed run. Environment wait time does not consume billable runner time.
 
 The [Update PlayTorrio source](https://github.com/namillis/playtorrio-altstore/actions/workflows/source-updater.yml) workflow checks the latest PlayTorrio V3 release, downloads a changed IPA, verifies its embedded metadata and SHA-256, then updates the source JSON and README in one commit and deploys the verified files to GitHub Pages. The updater uses the repository's built-in `GITHUB_TOKEN`; the delayed loop uses a short-lived GitHub App token scoped to Actions dispatch. No personal access token or external machine is required.
 
