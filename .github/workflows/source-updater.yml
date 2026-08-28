@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - ".github/workflows/update-source.yml"
+      - ".github/workflows/source-updater.yml"
       - "install.html"
       - "playtorrio-ios.json"
   workflow_dispatch:

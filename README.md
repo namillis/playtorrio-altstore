@@ -3,7 +3,7 @@
 [![One-tap install](https://img.shields.io/badge/Install-one--tap-6030A8)](https://namillis.github.io/playtorrio-altstore/)
 [![AltStore source](https://img.shields.io/badge/AltStore-source-6030A8)](https://namillis.github.io/playtorrio-altstore/playtorrio-ios.json)
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-live-2ea44f)](https://namillis.github.io/playtorrio-altstore/)
-[![Update source](https://github.com/namillis/playtorrio-altstore/actions/workflows/update-source.yml/badge.svg)](https://github.com/namillis/playtorrio-altstore/actions/workflows/update-source.yml)
+[![Update source](https://github.com/namillis/playtorrio-altstore/actions/workflows/source-updater.yml/badge.svg)](https://github.com/namillis/playtorrio-altstore/actions/workflows/source-updater.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![iOS apps](https://img.shields.io/badge/iOS-PlayTorrio%20V3%20%2B%20Legacy-6030A8)](playtorrio-ios.json)
 
@@ -77,7 +77,7 @@ The source uses version-pinned GitHub release URLs so a future release cannot si
 
 The [Keep PlayTorrio updater running](https://github.com/namillis/playtorrio-altstore/actions/workflows/update-loop.yml) workflow uses a 15-minute GitHub Environment wait timer, then starts the source updater and queues its next delayed run. Environment wait time does not consume billable runner time.
 
-The [Update PlayTorrio source](https://github.com/namillis/playtorrio-altstore/actions/workflows/update-source.yml) workflow checks the latest PlayTorrio V3 release, downloads a changed IPA, verifies its embedded metadata and SHA-256, then updates the source JSON and README in one commit and deploys the verified files to GitHub Pages. Both workflows use the repository's built-in `GITHUB_TOKEN`; no personal access token or external machine is required.
+The [Update PlayTorrio source](https://github.com/namillis/playtorrio-altstore/actions/workflows/source-updater.yml) workflow checks the latest PlayTorrio V3 release, downloads a changed IPA, verifies its embedded metadata and SHA-256, then updates the source JSON and README in one commit and deploys the verified files to GitHub Pages. The updater uses the repository's built-in `GITHUB_TOKEN`; the delayed loop uses a short-lived GitHub App token scoped to Actions dispatch. No personal access token or external machine is required.
 
 ## Live endpoints
 
@@ -96,7 +96,7 @@ GitHub Pages serves the source with an `application/json` content type. Deployme
 ```text
 playtorrio-altstore/
 ├── .github/workflows/update-loop.yml
-├── .github/workflows/update-source.yml
+├── .github/workflows/source-updater.yml
 ├── scripts/
 │   ├── test_update_playtorrio.py
 │   └── update_playtorrio.py
