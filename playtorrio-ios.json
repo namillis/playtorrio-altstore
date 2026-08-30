@@ -28,6 +28,16 @@
       },
       "versions": [
         {
+          "version": "1.0.8",
+          "buildVersion": "9",
+          "date": "2026-08-30",
+          "localizedDescription": "discord rich presence added\nUpdate modal fixes",
+          "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV3/releases/download/v1.0.8/PlayTorrio-iOS.ipa",
+          "size": 46671693,
+          "sha256": "90ee9313df3ec2a33879a2fa46432e45f9f6890b5e67230263ee80e036cb2b86",
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "1.0.7",
           "buildVersion": "8",
           "date": "2026-08-30",
@@ -108,11 +118,11 @@
           "minOSVersion": "14.0"
         }
       ],
-      "version": "1.0.7",
+      "version": "1.0.8",
       "versionDate": "2026-08-30",
-      "versionDescription": "Fix Player TrueHD\nFix torrent streaming\nAdd copy magnet button\nAdd new iptv sources",
-      "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV3/releases/download/v1.0.7/PlayTorrio-iOS.ipa",
-      "size": 46650147,
+      "versionDescription": "discord rich presence added\nUpdate modal fixes",
+      "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV3/releases/download/v1.0.8/PlayTorrio-iOS.ipa",
+      "size": 46671693,
       "minOSVersion": "14.0"
     },
     {
@@ -199,6 +209,16 @@
     }
   ],
   "news": [
+    {
+      "title": "PlayTorrio V3 1.0.8",
+      "identifier": "com-example-playtorrio-1-0-8-b9-iphone-ipad",
+      "caption": "discord rich presence added · Update modal fixes",
+      "tintColor": "6030A8",
+      "date": "2026-08-30",
+      "notify": false,
+      "appID": "com.example.playtorrio",
+      "imageURL": "https://raw.githubusercontent.com/ayman708-UX/PlayTorrioV3/main/assets/icon.png"
+    },
     {
       "title": "PlayTorrio V3 1.0.7",
       "identifier": "com-example-playtorrio-1-0-7-b8-iphone-ipad",
