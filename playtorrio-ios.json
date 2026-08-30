@@ -28,6 +28,16 @@
       },
       "versions": [
         {
+          "version": "1.0.7",
+          "buildVersion": "8",
+          "date": "2026-08-30",
+          "localizedDescription": "Fix Player TrueHD\nFix torrent streaming\nAdd copy magnet button\nAdd new iptv sources",
+          "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV3/releases/download/v1.0.7/PlayTorrio-iOS.ipa",
+          "size": 46650147,
+          "sha256": "921ea8eb69f87a7acf358856d4571736bc0c054693ea8802ee168eb426b0a11c",
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "1.0.6",
           "buildVersion": "7",
           "date": "2026-08-28",
@@ -98,11 +108,11 @@
           "minOSVersion": "14.0"
         }
       ],
-      "version": "1.0.6",
-      "versionDate": "2026-08-28",
-      "versionDescription": "Streaming proxy enhanced, less ram and cpu\nfaster streaming\nFix torrent streaming\nFix ios",
-      "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV3/releases/download/v1.0.6/PlayTorrio-iOS.ipa",
-      "size": 46665302,
+      "version": "1.0.7",
+      "versionDate": "2026-08-30",
+      "versionDescription": "Fix Player TrueHD\nFix torrent streaming\nAdd copy magnet button\nAdd new iptv sources",
+      "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV3/releases/download/v1.0.7/PlayTorrio-iOS.ipa",
+      "size": 46650147,
       "minOSVersion": "14.0"
     },
     {
@@ -189,6 +199,16 @@
     }
   ],
   "news": [
+    {
+      "title": "PlayTorrio V3 1.0.7",
+      "identifier": "com-example-playtorrio-1-0-7-b8-iphone-ipad",
+      "caption": "Fix Player TrueHD · Fix torrent streaming · Add copy magnet button · Add new iptv sources",
+      "tintColor": "6030A8",
+      "date": "2026-08-30",
+      "notify": false,
+      "appID": "com.example.playtorrio",
+      "imageURL": "https://raw.githubusercontent.com/ayman708-UX/PlayTorrioV3/main/assets/icon.png"
+    },
     {
       "title": "PlayTorrio V3 1.0.6",
       "identifier": "com-example-playtorrio-1-0-6-b7-iphone-ipad",
