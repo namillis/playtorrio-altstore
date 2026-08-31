@@ -89,7 +89,6 @@ GitHub Pages serves the source with an `application/json` content type. Deployme
 
 ```text
 playtorrio-altstore/
-├── .github/workflows/update-loop.yml
 ├── .github/workflows/source-updater.yml
 ├── scripts/
 │   ├── test_update_playtorrio.py
