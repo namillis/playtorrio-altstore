@@ -113,7 +113,6 @@ playtorrio-altstore/
 - [PlayTorrio source code and releases](https://github.com/ayman708-UX/PlayTorrioV3)
 - [AltStore](https://altstore.io/)
 - [SideStore](https://sidestore.io/)
-- [Feather](https://github.com/khcrysalis/Feather)
 
 ## License and attribution
 
