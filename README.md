@@ -41,7 +41,7 @@ Once added, choose PlayTorrio V3 or PlayTorrio Legacy and install the desired ve
 
 | App | Bundle identifier | Latest version | Minimum iOS | Upstream |
 |---|---|---:|---:|---|
-| PlayTorrio V3 | `com.example.playtorrio` | 1.0.8 (build 9) | 14.0 | [PlayTorrioV3](https://github.com/ayman708-UX/PlayTorrioV3/releases) |
+| PlayTorrio V3 | `com.example.playtorrio` | 1.0.9 (build 10) | 14.0 | [PlayTorrioV3](https://github.com/ayman708-UX/PlayTorrioV3/releases) |
 | PlayTorrio Legacy | `com.playtorrio.app` | 1.4.0 (build 41) | 13.0 | [PlayTorrioV2](https://github.com/ayman708-UX/PlayTorrioV2/releases) |
 
 ### Why are V3 and Legacy separate apps?
