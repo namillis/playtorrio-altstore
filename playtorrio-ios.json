@@ -28,6 +28,16 @@
       },
       "versions": [
         {
+          "version": "1.1.0",
+          "buildVersion": "11",
+          "date": "2026-09-02",
+          "localizedDescription": "Anime4K Upscaling added\nManga enhancements\nCalendar added\nTorrent file picking enhanced\nLinux Torrent engine fixed\nAddon management improved\nFiltering improved\nContinue watching improved\nUI Fixes\nResponsiveness improved",
+          "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV3/releases/download/v1.1.0/PlayTorrio-iOS.ipa",
+          "size": 48186470,
+          "sha256": "edf2b2bf3ca87dadcdcb231471ea43872c4c55cc95481fccbb6687885d04aa4b",
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "1.0.9",
           "buildVersion": "10",
           "date": "2026-08-31",
@@ -128,11 +138,11 @@
           "minOSVersion": "14.0"
         }
       ],
-      "version": "1.0.9",
-      "versionDate": "2026-08-31",
-      "versionDescription": "in app recommendations ai added\nOverall app responsiveness enhanced\nUI Fixes\nGeneral fixes\nNew features",
-      "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV3/releases/download/v1.0.9/PlayTorrio-iOS.ipa",
-      "size": 46749142,
+      "version": "1.1.0",
+      "versionDate": "2026-09-02",
+      "versionDescription": "Anime4K Upscaling added\nManga enhancements\nCalendar added\nTorrent file picking enhanced\nLinux Torrent engine fixed\nAddon management improved\nFiltering improved\nContinue watching improved\nUI Fixes\nResponsiveness improved",
+      "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV3/releases/download/v1.1.0/PlayTorrio-iOS.ipa",
+      "size": 48186470,
       "minOSVersion": "14.0"
     },
     {
@@ -219,6 +229,16 @@
     }
   ],
   "news": [
+    {
+      "title": "PlayTorrio V3 1.1.0",
+      "identifier": "com-example-playtorrio-1-1-0-b11-iphone-ipad",
+      "caption": "Anime4K Upscaling added · Manga enhancements · Calendar added · Torrent file picking enhanced · Linux Torrent engine fixed · Addon management improved · Filtering improved · Con...",
+      "tintColor": "6030A8",
+      "date": "2026-09-02",
+      "notify": false,
+      "appID": "com.example.playtorrio",
+      "imageURL": "https://raw.githubusercontent.com/ayman708-UX/PlayTorrioV3/main/assets/icon.png"
+    },
     {
       "title": "PlayTorrio V3 1.0.9",
       "identifier": "com-example-playtorrio-1-0-9-b10-iphone-ipad",
