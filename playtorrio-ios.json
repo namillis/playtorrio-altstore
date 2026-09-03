@@ -28,6 +28,16 @@
       },
       "versions": [
         {
+          "version": "1.1.2",
+          "buildVersion": "13",
+          "date": "2026-09-03",
+          "localizedDescription": "Over 35 new built in sources added\nContinue watching enhancements",
+          "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV3/releases/download/v1.1.2/PlayTorrio-iOS.ipa",
+          "size": 48222512,
+          "sha256": "e7ca15cfe885a03f86bb15a1b47c85a767c0215d0ce6e864383ee4683a3bb9ad",
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "1.1.1",
           "buildVersion": "12",
           "date": "2026-09-02",
@@ -148,11 +158,11 @@
           "minOSVersion": "14.0"
         }
       ],
-      "version": "1.1.1",
-      "versionDate": "2026-09-02",
-      "versionDescription": "Fix anime",
-      "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV3/releases/download/v1.1.1/PlayTorrio-iOS.ipa",
-      "size": 48190549,
+      "version": "1.1.2",
+      "versionDate": "2026-09-03",
+      "versionDescription": "Over 35 new built in sources added\nContinue watching enhancements",
+      "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV3/releases/download/v1.1.2/PlayTorrio-iOS.ipa",
+      "size": 48222512,
       "minOSVersion": "14.0"
     },
     {
@@ -239,6 +249,16 @@
     }
   ],
   "news": [
+    {
+      "title": "PlayTorrio V3 1.1.2",
+      "identifier": "com-example-playtorrio-1-1-2-b13-iphone-ipad",
+      "caption": "Over 35 new built in sources added · Continue watching enhancements",
+      "tintColor": "6030A8",
+      "date": "2026-09-03",
+      "notify": false,
+      "appID": "com.example.playtorrio",
+      "imageURL": "https://raw.githubusercontent.com/ayman708-UX/PlayTorrioV3/main/assets/icon.png"
+    },
     {
       "title": "PlayTorrio V3 1.1.1",
       "identifier": "com-example-playtorrio-1-1-1-b12-iphone-ipad",
