@@ -28,6 +28,16 @@
       },
       "versions": [
         {
+          "version": "1.1.1",
+          "buildVersion": "12",
+          "date": "2026-09-02",
+          "localizedDescription": "Fix anime",
+          "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV3/releases/download/v1.1.1/PlayTorrio-iOS.ipa",
+          "size": 48190549,
+          "sha256": "c497cd311cb7693362c4b64bebf177aca69076822b788f10417e45cd8df7906f",
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "1.1.0",
           "buildVersion": "11",
           "date": "2026-09-02",
@@ -138,11 +148,11 @@
           "minOSVersion": "14.0"
         }
       ],
-      "version": "1.1.0",
+      "version": "1.1.1",
       "versionDate": "2026-09-02",
-      "versionDescription": "Anime4K Upscaling added\nManga enhancements\nCalendar added\nTorrent file picking enhanced\nLinux Torrent engine fixed\nAddon management improved\nFiltering improved\nContinue watching improved\nUI Fixes\nResponsiveness improved",
-      "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV3/releases/download/v1.1.0/PlayTorrio-iOS.ipa",
-      "size": 48186470,
+      "versionDescription": "Fix anime",
+      "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV3/releases/download/v1.1.1/PlayTorrio-iOS.ipa",
+      "size": 48190549,
       "minOSVersion": "14.0"
     },
     {
@@ -229,6 +239,16 @@
     }
   ],
   "news": [
+    {
+      "title": "PlayTorrio V3 1.1.1",
+      "identifier": "com-example-playtorrio-1-1-1-b12-iphone-ipad",
+      "caption": "Fix anime",
+      "tintColor": "6030A8",
+      "date": "2026-09-02",
+      "notify": false,
+      "appID": "com.example.playtorrio",
+      "imageURL": "https://raw.githubusercontent.com/ayman708-UX/PlayTorrioV3/main/assets/icon.png"
+    },
     {
       "title": "PlayTorrio V3 1.1.0",
       "identifier": "com-example-playtorrio-1-1-0-b11-iphone-ipad",
