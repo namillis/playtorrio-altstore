@@ -28,6 +28,16 @@
       },
       "versions": [
         {
+          "version": "1.1.5",
+          "buildVersion": "16",
+          "date": "2026-09-09",
+          "localizedDescription": "Downloader enhancements\nFixed streaming issues\nFixed audiobook generation\nAdded fullscreen mode\nUI Fixes",
+          "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV3/releases/download/v1.1.5/PlayTorrio-iOS.ipa",
+          "size": 48421258,
+          "sha256": "3d6568b6f872fe089cdc3a8692f187abab004e178555bc861a3d6c6c5623aeda",
+          "minOSVersion": "14.0"
+        },
+        {
           "version": "1.1.4",
           "buildVersion": "15",
           "date": "2026-09-07",
@@ -178,11 +188,11 @@
           "minOSVersion": "14.0"
         }
       ],
-      "version": "1.1.4",
-      "versionDate": "2026-09-07",
-      "versionDescription": "Fixed non lethal error stopping streaming\nimproved a lot",
-      "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV3/releases/download/v1.1.4/PlayTorrio-iOS.ipa",
-      "size": 48334944,
+      "version": "1.1.5",
+      "versionDate": "2026-09-09",
+      "versionDescription": "Downloader enhancements\nFixed streaming issues\nFixed audiobook generation\nAdded fullscreen mode\nUI Fixes",
+      "downloadURL": "https://github.com/ayman708-UX/PlayTorrioV3/releases/download/v1.1.5/PlayTorrio-iOS.ipa",
+      "size": 48421258,
       "minOSVersion": "14.0"
     },
     {
@@ -269,6 +279,16 @@
     }
   ],
   "news": [
+    {
+      "title": "PlayTorrio V3 1.1.5",
+      "identifier": "com-example-playtorrio-1-1-5-b16-iphone-ipad",
+      "caption": "Downloader enhancements · Fixed streaming issues · Fixed audiobook generation · Added fullscreen mode · UI Fixes",
+      "tintColor": "6030A8",
+      "date": "2026-09-09",
+      "notify": false,
+      "appID": "com.example.playtorrio",
+      "imageURL": "https://raw.githubusercontent.com/ayman708-UX/PlayTorrioV3/main/assets/icon.png"
+    },
     {
       "title": "PlayTorrio V3 1.1.4",
       "identifier": "com-example-playtorrio-1-1-4-b15-iphone-ipad",
